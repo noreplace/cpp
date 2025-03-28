@@ -1,8 +1,6 @@
 <RCC>
-    <qresource prefix="/configs">
-        <file>config.json</file>
-    </qresource>
-    <qresource prefix="/images">
-        <file>img.png</file>
+    <qresource prefix="/configs"/>
+    <qresource prefix="/">
+        <file>conf.json</file>
     </qresource>
 </RCC>

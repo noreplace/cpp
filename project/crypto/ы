@@ -1,0 +1,30 @@
+"""
+        self.RSA = Menu(self.m)
+        self.RSA_enc = Menu(self.m)
+        self.RSA_dec = Menu(self.m)
+        self.ASSYMETRIC = Menu(self.m)
+
+        self.CRP.add_cascade(label='Ассиметричное шифрование', menu=self.ASSYMETRIC)
+        self.ASSYMETRIC.add_cascade(label='RSA', menu=self.RSA)
+        self.RSA.add_cascade(label='Зашифровать', menu=self.RSA_enc)
+        self.RSA_enc.add_command(label='Этот файл', command=lambda a=crypto.RSA.RSA(self.root, self.text): a.RSA_encrypt_file(self.op))
+        self.RSA.add_cascade(label='Дешифровать', menu=self.RSA_dec)
+        self.RSA_dec.add_command(label='Этот файл', command=lambda a=crypto.RSA.RSA(self.root, self.text): a.RSA_decrypt_file(self.op))
+        self.RSA_dec.add_command(label='Данные этого файла')
+        self.RSA.add_command(label='О технологии RSA')
+
+        self.SYMMETRIC = Menu(self.m)
+        self.PYAESCRYPT = Menu(self.m)
+        self.CRPAES = Menu(self.m)
+        self.DECRPAES = Menu(self.m)
+
+        self.CRP.add_cascade(label='Симметричное шифрование', menu=self.SYMMETRIC)
+        self.SYMMETRIC.add_cascade(label='AES', menu=self.PYAESCRYPT)
+        self.PYAESCRYPT.add_cascade(label='Зашифровать', menu=self.CRPAES)
+        self.CRPAES.add_command(label='Данные этого файла', command=lambda a=crypto.AES.AES(self.root, self.text): a._crp_AES(self.op))
+        self.CRPAES.add_command(label='Этот файл', command=lambda a=crypto.AES.AES(self.root, self.text): a._crp_file_AES(self.op))
+        self.PYAESCRYPT.add_cascade(label='Дешифровать', menu=self.DECRPAES)
+        self.DECRPAES.add_command(label='Данные с этого файла', command=lambda a=crypto.AES.AES(self.root, self.text): a._dcrp__AES(self.op))
+        self.DECRPAES.add_command(label='Этот файл', command=lambda a=crypto.AES.AES(self.root, self.text): a._decrtp_file(self.op))
+        self.PYAESCRYPT.add_command(label='О технологии AES')
+        """
