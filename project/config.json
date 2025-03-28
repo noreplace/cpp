@@ -1,0 +1,15 @@
+{
+    "LastFile": "/home/maxvo/project/config.json",
+    "flags": {
+        "AskExit": 0,
+        "OpenFile": 1,
+        "SaveFile": 0
+    },
+    "height": 602,
+    "size": {
+        "height": 100,
+        "width": 600
+    },
+    "title": "NFile editor",
+    "width": 899
+}
